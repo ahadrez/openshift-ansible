@@ -3,7 +3,7 @@
   connection: local
   gather_facts: no
   tasks:
-    - debug: msg="Starting deploy_cluster"
+    - debug: msg="Starting openshift_metrics"
 - import_playbook: ../init/main.yml
   vars:
     l_init_fact_hosts: "oo_masters_to_config"
